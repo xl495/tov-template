@@ -5,6 +5,18 @@ body,
 #app {
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
+}
+
+
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#app {
+	width: 1920px;
 }
 
 html.dark {
@@ -36,27 +48,23 @@ html.dark {
 /*
 * 全局滚动条
 */
+
 ::-webkit-scrollbar {
-	width: 11px;
-	height: 11px;
-	background-color: rgb(246, 247, 248);
+  width: 8px;
 }
-
-::-webkit-scrollbar-thumb {
-	background-color: rgb(233, 236, 239);
-	border-radius: 10px;
-}
-
+/* 滚动槽 */
 ::-webkit-scrollbar-track {
-	background-color: rgb(246, 247, 248);
+  box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  background-color: #E0C3B1;
 	border-radius: 10px;
 }
-
-html.dark ::-webkit-scrollbar,
-html.dark ::-webkit-scrollbar-track {
-	background-color: #212529;
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #C93B15;
+  box-shadow: inset006pxrgba(0, 0, 0, 0.5);
 }
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 1);
 
-html.dark ::-webkit-scrollbar-thumb {
-	background-color: #343a40;
 }

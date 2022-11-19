@@ -1,20 +1,35 @@
 <script setup lang="ts">
-const { isDark, toggleDark } = useDarks()
-
-const { t, toggleLocale, language } = useLanguage()
-
-const theme = computed(() => (isDark.value ? 'dark' : 'light'))
+const links = ref<{ title: string; url: string }[]>([
+	{
+		title: '医院简介',
+		url: '/introduction/hospital',
+	},
+	{
+		title: '科室简介',
+		url: '/introduction/department',
+	},
+	{
+		title: '医师简介',
+		url: '/introduction/doctor',
+	},
+	{
+		title: '楼层导航',
+		url: '/navigation',
+	},
+])
 </script>
 
 <template>
-	<div class="m-6">Hello，This is the tov template！！</div>
-	<div class="cursor-pointer m-6" @click="toggleDark()">theme: {{ theme }}</div>
-
-	<div class="cursor-pointer mt-6 ml-6" @click="toggleLocale()">
-		<div>language: {{ language }}</div>
-		<div>base: {{ t('about') }}</div>
-		<div>nesting: {{ t('nesting.sir') }} {{ t('nesting.lady') }}</div>
+	<div class="index-wrap">
+		<span>111</span>
+		<div class="sidebar-link">
+			<el-button
+				v-for="(item, index) in links"
+				:key="index"
+				@click="$router.push(item.url)"
+			>
+				{{ item.title }}</el-button
+			>
+		</div>
 	</div>
-
-	<Counter />
 </template>

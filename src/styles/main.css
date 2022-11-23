@@ -16,6 +16,7 @@ body {
 }
 
 #app {
+	position: relative;
 	width: 1920px;
 }
 
@@ -61,10 +62,10 @@ html.dark {
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #C93B15;
+  background: #C9975C;
   box-shadow: inset006pxrgba(0, 0, 0, 0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255, 0, 0, 1);
+  background: #F1E1D0;
 
 }

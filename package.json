@@ -28,6 +28,7 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
     "autoprefixer": "^10.4.13",
+    "axios": "^1.2.0",
     "element-plus": "^2.2.22",
     "postcss-import": "^15.0.0",
     "vue": "^3.2.41"

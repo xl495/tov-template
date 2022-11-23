@@ -14,5 +14,16 @@ export default defineConfig({
 	css: {
 		preprocessorOptions: {},
 	},
+	server: {
+		open: true,
+		// 设置代理
+		proxy: {
+			'/api': {
+				target: 'http://153sb59665.51mypc.cn:30904',
+				changeOrigin: true,
+				rewrite: (path) => path.replace(/^\/api/, ''),
+			},
+		},
+	},
 	plugins: [Tov()],
 })

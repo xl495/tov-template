@@ -1,26 +1,15 @@
-.index-wrap {
-  background: no-repeat url('../assets/bg.jpg') center;
-  height: 100vh;
-	.sidebar-link {
-		display: flex;
-		flex-direction: column;
-		width: 120px;
-	}
-}
-
 
 .layout-introduction-wrap {
-	background: no-repeat url('../assets/bg.jpg') center;
+	background:  url('../assets/introduction-bg.png') no-repeat left top;
 	height: 100vh;
 	.back-wrap {
-		position: fixed;
+		position: absolute;
 		bottom: 80px;
 		left: 92px;
 		.back {
 			height: 60px;
 			width: 60px;
 			background: linear-gradient(45deg, #ECC98C, #D0A064);
-			// background: linear-gradient(45deg,#ECC98C, #D0A064);
 		}
 	}
 }

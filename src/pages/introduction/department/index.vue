@@ -3,9 +3,7 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute()
-
-console.log(route.meta)
+// const route = useRoute()
 </script>
 
 <style scoped lang="scss">
@@ -16,7 +14,8 @@ console.log(route.meta)
 <route>
 	{
 		meta: {
-			layout: 'custom'
+			layout: 'introduction',
+			leftTitle: '科室简介'
 		}
 	}
 </route>

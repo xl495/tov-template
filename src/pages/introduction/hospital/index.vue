@@ -21,7 +21,8 @@ import { content } from '../info'
 <route>
 	{
 		meta: {
-			layout: 'custom'
+			layout: 'custom',
+			title: '医院简介'
 		}
 	}
 </route>

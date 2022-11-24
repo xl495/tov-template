@@ -7,13 +7,13 @@ import './styles/index.scss'
 import 'virtual:windi-utilities.css'
 import 'virtual:windi-devtools'
 
-import '~/guard'
-
 import { setGlobalOptions } from 'vue-request'
 
 setGlobalOptions({
 	manual: true,
 })
+
+import '~/guard'
 
 import App from './App.vue'
 

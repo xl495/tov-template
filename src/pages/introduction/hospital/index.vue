@@ -1,12 +1,28 @@
 <template>
 	<div class="hospital-content">
-		啊科技时代回家卡莎扣税的哈萨克今安徽省打卡机圣诞卡就
-		<div class="content-text" v-html="content"></div>
+		<div
+			v-if="result"
+			v-loading="loading"
+			class="content-text"
+			v-html="result.NewsContent"
+		></div>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { content } from '../info'
+import { useRequest } from 'vue-request'
+import { getNewsList } from '~/api/news'
+
+const { data, loading } = await useRequest(getNewsList, {
+	manual: false,
+})
+
+const result = computed(() => {
+	if (!data.value) return
+	return data.value?.Data.find((item: any) => {
+		return item.NewsTitle === '医院简介'
+	})
+})
 </script>
 
 <style scoped lang="scss">

@@ -46,7 +46,7 @@ const changeTab = (index: string | number) => {
 			line-height: 40px;
 			text-align: center;
 			background: url('~/assets/tab.png') no-repeat top center;
-			font-size: 20px;
+			font-size: 20spx;
 			font-family: Source Han Serif CN;
 			font-weight: 600;
 			color: #3f3429;

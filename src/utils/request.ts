@@ -24,7 +24,7 @@ http.interceptors.response.use(
 	(response) => {
 		const res = response.data
 		if (response.status === 500) {
-			return Promise.reject(new Error(res.message || 'Error'))
+			return Promise.reject(new Error(res.Message || 'Error'))
 		} else {
 			return res
 		}

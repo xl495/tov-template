@@ -44,7 +44,7 @@ const changeTab = (index: string | number) => {
 		display: flex;
 		width: 200px;
 		flex-direction: column;
-		max-height: 700px;
+		max-height: 620px;
 		overflow-y: auto;
 		scrollbar-width: none;
 		padding-left: 15px;

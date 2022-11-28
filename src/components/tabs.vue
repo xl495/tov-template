@@ -8,7 +8,7 @@
 				:class="{ 'is-active': Number(props.value) === index }"
 				@click="changeTab(index)"
 			>
-				<span>{{ tab.name }}</span>
+				<span class="tab-text">{{ tab.name }}</span>
 			</div>
 		</div>
 
@@ -27,10 +27,11 @@ const props = withDefaults(
 	}
 )
 
-const emits = defineEmits(['update:value'])
+const emits = defineEmits(['update:value', 'change'])
 
 const changeTab = (index: string | number) => {
 	emits('update:value', index)
+	emits('change', index)
 }
 </script>
 

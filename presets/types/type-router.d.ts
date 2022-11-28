@@ -41,9 +41,12 @@ declare module 'vue-router/auto/routes' {
     '/introduction': RouteRecordInfo<'/introduction', '/introduction', Record<never, never>, Record<never, never>>,
     '/introduction/department/': RouteRecordInfo<'/introduction/department/', '/introduction/department', Record<never, never>, Record<never, never>>,
     '/introduction/doctor/': RouteRecordInfo<'/introduction/doctor/', '/introduction/doctor', Record<never, never>, Record<never, never>>,
+    '/introduction/doctor/doctor-item': RouteRecordInfo<'/introduction/doctor/doctor-item', '/introduction/doctor/doctor-item', Record<never, never>, Record<never, never>>,
     '/introduction/hospital/': RouteRecordInfo<'/introduction/hospital/', '/introduction/hospital', Record<never, never>, Record<never, never>>,
     '/login/': RouteRecordInfo<'/login/', '/login', Record<never, never>, Record<never, never>>,
+    '/navigation': RouteRecordInfo<'/navigation', '/navigation', Record<never, never>, Record<never, never>>,
     '/navigation/': RouteRecordInfo<'/navigation/', '/navigation', Record<never, never>, Record<never, never>>,
+    '/navigation/model-map': RouteRecordInfo<'/navigation/model-map', '/navigation/model-map', Record<never, never>, Record<never, never>>,
   }
 }
 

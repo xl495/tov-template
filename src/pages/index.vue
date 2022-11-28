@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="index">
 const links = ref<{ title: string; image: string; url: string }[]>([
 	{
 		title: '医院简介',
@@ -19,11 +19,6 @@ const links = ref<{ title: string; image: string; url: string }[]>([
 		title: '楼层导航',
 		image: 'navigation',
 		url: '/navigation',
-	},
-	{
-		title: '物价导航',
-		image: 'prices',
-		url: '/prices',
 	},
 ])
 
@@ -71,7 +66,7 @@ const getImage = (name: string): string => {
 		width: 120px;
 	}
 	.sidebar-link-image {
-		margin-top: 6px;
+		margin-top: 33px;
 		cursor: pointer;
 	}
 }

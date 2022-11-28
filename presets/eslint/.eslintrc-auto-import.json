@@ -270,7 +270,7 @@
     "watchAtMost": true,
     "watchDebounced": true,
     "watchEffect": true,
-    "watchIgnorable": true,
+   "watchIgnorable": true,
     "watchOnce": true,
     "watchPausable": true,
     "watchPostEffect": true,

@@ -31,11 +31,10 @@ const leftTitle = ref({
 				@click="$router.back()"
 			>
 				<template #icon>
-					<el-icon size="24"><ArrowLeftBold /></el-icon>
+					<el-icon size="24"><House /></el-icon>
 				</template>
 			</el-button>
 		</div>
-
 		<div class="title-wrap">
 			<div class="sub-title">{{ leftTitle.subTitle }}</div>
 			<div class="title">{{ leftTitle.title }}</div>
